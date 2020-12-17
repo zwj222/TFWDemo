@@ -6,6 +6,21 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7DA355AB258B21810097DB08 /* TFWDemo-Script */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7DA355AE258B21810097DB08 /* Build configuration list for PBXAggregateTarget "TFWDemo-Script" */;
+			buildPhases = (
+				7DA355B1258B21B00097DB08 /* ShellScript */,
+			);
+			dependencies = (
+				7DA355B0258B21960097DB08 /* PBXTargetDependency */,
+			);
+			name = "TFWDemo-Script";
+			productName = "TFWDemo-Script";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		7DA355322589FF710097DB08 /* TFWSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA355302589FF710097DB08 /* TFWSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DA3553D258A013C0097DB08 /* TFWSDK_Dog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA3553B258A013C0097DB08 /* TFWSDK_Dog.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +43,16 @@
 		7DA3559C258AE8150097DB08 /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3558D258AE8150097DB08 /* TestXibViewController.m */; };
 		7DA3559D258AE8150097DB08 /* TestClassFilesClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3558E258AE8150097DB08 /* TestClassFilesClass.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DA355AF258B21960097DB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DA355242589FF710097DB08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DA3552C2589FF710097DB08;
+			remoteInfo = TFWSDK;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		005135FB64854D9702183C54 /* Pods-TFWSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFWSDK.release.xcconfig"; path = "Target Support Files/Pods-TFWSDK/Pods-TFWSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +211,9 @@
 					7DA3552C2589FF710097DB08 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					7DA355AB258B21810097DB08 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 7DA355272589FF710097DB08 /* Build configuration list for PBXProject "TFWSDK" */;
@@ -202,6 +230,7 @@
 			projectRoot = "";
 			targets = (
 				7DA3552C2589FF710097DB08 /* TFWSDK */,
+				7DA355AB258B21810097DB08 /* TFWDemo-Script */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +286,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFWSDK/Pods-TFWSDK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7DA355B1258B21B00097DB08 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nUNIVERSAL_OUTPUTFOLDER=../Framework/\n\n# 创建输出目录，并删除之前的framework文件\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\"\n\n# 分别编译模拟器和真机的Framework\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# 定义真机、模拟器Build文件夹路径变量\nIPHONE_BUILD=${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\nSIMULATOR_BUILD=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework\n\n# 拷贝framework到univer目录\ncp -R \"${IPHONE_BUILD}\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n#cp -R \"${SIMULATOR_BUILD}\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# 定义输出路径变量\nOUTPUT_PATH=${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\n\n# 合并framework，输出最终的framework到build目录 \nlipo -create \"${IPHONE_BUILD}/${PROJECT_NAME}\" \"${SIMULATOR_BUILD}/${PROJECT_NAME}\" -output \"${OUTPUT_PATH}/${PROJECT_NAME}\"\n\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,6 +323,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DA355B0258B21960097DB08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DA3552C2589FF710097DB08 /* TFWSDK */;
+			targetProxy = 7DA355AF258B21960097DB08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7DA355332589FF710097DB08 /* Debug */ = {
@@ -459,6 +513,24 @@
 			};
 			name = Release;
 		};
+		7DA355AC258B21810097DB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88QQ9A525M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7DA355AD258B21810097DB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88QQ9A525M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -476,6 +548,15 @@
 			buildConfigurations = (
 				7DA355362589FF710097DB08 /* Debug */,
 				7DA355372589FF710097DB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DA355AE258B21810097DB08 /* Build configuration list for PBXAggregateTarget "TFWDemo-Script" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DA355AC258B21810097DB08 /* Debug */,
+				7DA355AD258B21810097DB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

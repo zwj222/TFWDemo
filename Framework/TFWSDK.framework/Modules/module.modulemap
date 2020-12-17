@@ -1,0 +1,6 @@
+framework module TFWSDK {
+  umbrella header "TFWSDK.h"
+
+  export *
+  module * { export * }
+}

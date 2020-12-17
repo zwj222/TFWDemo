@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TFWSDK"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.5"
   spec.summary      = "A short description of TFWSDK."
 
   
@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :text => "Copyright (C) 2020 Willian, Inc. All rights reserved." }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   # spec.social_media_url   = "https://twitter.com/Willian"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  # spec.platform     = :ios, "10.0"
+  #spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   spec.ios.deployment_target = "10.0"
@@ -34,7 +34,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files  = "TFWSDK/TFWSDK/*.{h,m}"
+  #spec.source_files  = "TFWSDK/TFWSDK/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "TFWSDK/TFWSDK/TFWSDK.h"
@@ -44,6 +44,8 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   #spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
   spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
+
+  spec.vendored_frameworks ='TFWSDK.framework'
 
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
