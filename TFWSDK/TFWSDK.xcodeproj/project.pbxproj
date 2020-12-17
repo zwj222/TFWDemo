@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,25 @@
 		7DA3553E258A013C0097DB08 /* TFWSDK_Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3553C258A013C0097DB08 /* TFWSDK_Dog.m */; };
 		7DA35555258A06120097DB08 /* TFWSDK_Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA35553258A06120097DB08 /* TFWSDK_Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DA35556258A06120097DB08 /* TFWSDK_Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA35554258A06120097DB08 /* TFWSDK_Image.m */; };
+		7DA3558F258AE8150097DB08 /* TestXibViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA35580258AE8140097DB08 /* TestXibViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA35590258AE8150097DB08 /* TestPlayVideoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA35581258AE8140097DB08 /* TestPlayVideoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA35591258AE8150097DB08 /* TestPlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA35582258AE8140097DB08 /* TestPlayVideoViewController.m */; };
+		7DA35592258AE8150097DB08 /* TestPlayAudioViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA35583258AE8140097DB08 /* TestPlayAudioViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA35593258AE8150097DB08 /* TestClassFilesClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA35584258AE8140097DB08 /* TestClassFilesClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA35594258AE8150097DB08 /* TestViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA35585258AE8140097DB08 /* TestViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA35595258AE8150097DB08 /* TestLayoutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA35586258AE8140097DB08 /* TestLayoutView.h */; };
+		7DA35596258AE8150097DB08 /* TestXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DA35587258AE8140097DB08 /* TestXibViewController.xib */; };
+		7DA35597258AE8150097DB08 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA35588258AE8140097DB08 /* TestViewController.m */; };
+		7DA35598258AE8150097DB08 /* TestLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA35589258AE8140097DB08 /* TestLayoutView.m */; };
+		7DA35599258AE8150097DB08 /* TestPlayAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3558A258AE8140097DB08 /* TestPlayAudioViewController.m */; };
+		7DA3559A258AE8150097DB08 /* TestClassFilesHideHearderClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA3558B258AE8150097DB08 /* TestClassFilesHideHearderClass.h */; };
+		7DA3559B258AE8150097DB08 /* TestClassFilesHideHearderClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3558C258AE8150097DB08 /* TestClassFilesHideHearderClass.m */; };
+		7DA3559C258AE8150097DB08 /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3558D258AE8150097DB08 /* TestXibViewController.m */; };
+		7DA3559D258AE8150097DB08 /* TestClassFilesClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3558E258AE8150097DB08 /* TestClassFilesClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005135FB64854D9702183C54 /* Pods-TFWSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFWSDK.release.xcconfig"; path = "Target Support Files/Pods-TFWSDK/Pods-TFWSDK.release.xcconfig"; sourceTree = "<group>"; };
 		7DA3552D2589FF710097DB08 /* TFWSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFWSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA355302589FF710097DB08 /* TFWSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFWSDK.h; sourceTree = "<group>"; };
 		7DA355312589FF710097DB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -22,6 +38,23 @@
 		7DA3553C258A013C0097DB08 /* TFWSDK_Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFWSDK_Dog.m; sourceTree = "<group>"; };
 		7DA35553258A06120097DB08 /* TFWSDK_Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFWSDK_Image.h; sourceTree = "<group>"; };
 		7DA35554258A06120097DB08 /* TFWSDK_Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFWSDK_Image.m; sourceTree = "<group>"; };
+		7DA35580258AE8140097DB08 /* TestXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestXibViewController.h; sourceTree = "<group>"; };
+		7DA35581258AE8140097DB08 /* TestPlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPlayVideoViewController.h; sourceTree = "<group>"; };
+		7DA35582258AE8140097DB08 /* TestPlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPlayVideoViewController.m; sourceTree = "<group>"; };
+		7DA35583258AE8140097DB08 /* TestPlayAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPlayAudioViewController.h; sourceTree = "<group>"; };
+		7DA35584258AE8140097DB08 /* TestClassFilesClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassFilesClass.h; sourceTree = "<group>"; };
+		7DA35585258AE8140097DB08 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		7DA35586258AE8140097DB08 /* TestLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutView.h; sourceTree = "<group>"; };
+		7DA35587258AE8140097DB08 /* TestXibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibViewController.xib; sourceTree = "<group>"; };
+		7DA35588258AE8140097DB08 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		7DA35589258AE8140097DB08 /* TestLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutView.m; sourceTree = "<group>"; };
+		7DA3558A258AE8140097DB08 /* TestPlayAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPlayAudioViewController.m; sourceTree = "<group>"; };
+		7DA3558B258AE8150097DB08 /* TestClassFilesHideHearderClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassFilesHideHearderClass.h; sourceTree = "<group>"; };
+		7DA3558C258AE8150097DB08 /* TestClassFilesHideHearderClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassFilesHideHearderClass.m; sourceTree = "<group>"; };
+		7DA3558D258AE8150097DB08 /* TestXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestXibViewController.m; sourceTree = "<group>"; };
+		7DA3558E258AE8150097DB08 /* TestClassFilesClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassFilesClass.m; sourceTree = "<group>"; };
+		7DA355A6258AEFDA0097DB08 /* libPods-TFWSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-TFWSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B3294193C4774B7E9E9FB6 /* Pods-TFWSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFWSDK.debug.xcconfig"; path = "Target Support Files/Pods-TFWSDK/Pods-TFWSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,11 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13C131E5FF1489E7A2F26BA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DA355A6258AEFDA0097DB08 /* libPods-TFWSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DA355232589FF710097DB08 = {
 			isa = PBXGroup;
 			children = (
 				7DA3552F2589FF710097DB08 /* TFWSDK */,
 				7DA3552E2589FF710097DB08 /* Products */,
+				F70C7C5F08C1C59F2A908A41 /* Pods */,
+				13C131E5FF1489E7A2F26BA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +97,21 @@
 		7DA3552F2589FF710097DB08 /* TFWSDK */ = {
 			isa = PBXGroup;
 			children = (
+				7DA35584258AE8140097DB08 /* TestClassFilesClass.h */,
+				7DA3558E258AE8150097DB08 /* TestClassFilesClass.m */,
+				7DA3558B258AE8150097DB08 /* TestClassFilesHideHearderClass.h */,
+				7DA3558C258AE8150097DB08 /* TestClassFilesHideHearderClass.m */,
+				7DA35586258AE8140097DB08 /* TestLayoutView.h */,
+				7DA35589258AE8140097DB08 /* TestLayoutView.m */,
+				7DA35583258AE8140097DB08 /* TestPlayAudioViewController.h */,
+				7DA3558A258AE8140097DB08 /* TestPlayAudioViewController.m */,
+				7DA35581258AE8140097DB08 /* TestPlayVideoViewController.h */,
+				7DA35582258AE8140097DB08 /* TestPlayVideoViewController.m */,
+				7DA35585258AE8140097DB08 /* TestViewController.h */,
+				7DA35588258AE8140097DB08 /* TestViewController.m */,
+				7DA35580258AE8140097DB08 /* TestXibViewController.h */,
+				7DA3558D258AE8150097DB08 /* TestXibViewController.m */,
+				7DA35587258AE8140097DB08 /* TestXibViewController.xib */,
 				7DA355302589FF710097DB08 /* TFWSDK.h */,
 				7DA355312589FF710097DB08 /* Info.plist */,
 				7DA3553B258A013C0097DB08 /* TFWSDK_Dog.h */,
@@ -64,6 +122,15 @@
 			path = TFWSDK;
 			sourceTree = "<group>";
 		};
+		F70C7C5F08C1C59F2A908A41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8B3294193C4774B7E9E9FB6 /* Pods-TFWSDK.debug.xcconfig */,
+				005135FB64854D9702183C54 /* Pods-TFWSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -71,9 +138,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA35590258AE8150097DB08 /* TestPlayVideoViewController.h in Headers */,
+				7DA35594258AE8150097DB08 /* TestViewController.h in Headers */,
+				7DA35592258AE8150097DB08 /* TestPlayAudioViewController.h in Headers */,
+				7DA3558F258AE8150097DB08 /* TestXibViewController.h in Headers */,
+				7DA35593258AE8150097DB08 /* TestClassFilesClass.h in Headers */,
 				7DA3553D258A013C0097DB08 /* TFWSDK_Dog.h in Headers */,
 				7DA355322589FF710097DB08 /* TFWSDK.h in Headers */,
 				7DA35555258A06120097DB08 /* TFWSDK_Image.h in Headers */,
+				7DA3559A258AE8150097DB08 /* TestClassFilesHideHearderClass.h in Headers */,
+				7DA35595258AE8150097DB08 /* TestLayoutView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DA355352589FF710097DB08 /* Build configuration list for PBXNativeTarget "TFWSDK" */;
 			buildPhases = (
+				5DE5C183B8A7B0FDC0DD3C62 /* [CP] Check Pods Manifest.lock */,
 				7DA355282589FF710097DB08 /* Headers */,
 				7DA355292589FF710097DB08 /* Sources */,
 				7DA3552A2589FF710097DB08 /* Frameworks */,
 				7DA3552B2589FF710097DB08 /* Resources */,
+				659B4068498175401E9161D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,10 +211,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA35596258AE8150097DB08 /* TestXibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DE5C183B8A7B0FDC0DD3C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFWSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		659B4068498175401E9161D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFWSDK/Pods-TFWSDK-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFWSDK/Pods-TFWSDK-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFWSDK/Pods-TFWSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DA355292589FF710097DB08 /* Sources */ = {
@@ -146,6 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA35556258A06120097DB08 /* TFWSDK_Image.m in Sources */,
+				7DA35599258AE8150097DB08 /* TestPlayAudioViewController.m in Sources */,
+				7DA35591258AE8150097DB08 /* TestPlayVideoViewController.m in Sources */,
+				7DA35598258AE8150097DB08 /* TestLayoutView.m in Sources */,
+				7DA3559C258AE8150097DB08 /* TestXibViewController.m in Sources */,
+				7DA3559B258AE8150097DB08 /* TestClassFilesHideHearderClass.m in Sources */,
+				7DA3559D258AE8150097DB08 /* TestClassFilesClass.m in Sources */,
+				7DA35597258AE8150097DB08 /* TestViewController.m in Sources */,
 				7DA3553E258A013C0097DB08 /* TFWSDK_Dog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +397,7 @@
 		};
 		7DA355362589FF710097DB08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B3294193C4774B7E9E9FB6 /* Pods-TFWSDK.debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,6 +408,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TFWSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +429,7 @@
 		};
 		7DA355372589FF710097DB08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005135FB64854D9702183C54 /* Pods-TFWSDK.release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +440,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TFWSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

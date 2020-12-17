@@ -15,6 +15,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) TFWSDK_Dog *dog;
+@property (nonatomic, strong) TestClassFilesClass *testClass;
 
 @property (nonatomic, strong) UIView *centerView;
 
@@ -27,6 +28,11 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor cyanColor];
+    
+    self.testClass = [[TestClassFilesClass alloc] init];
+    self.testClass.className = @"outerClassName";
+    self.testClass.classdDesc = @"outerClassDesc";
+    
     
     self.dog = [[TFWSDK_Dog alloc] init];
     
@@ -42,11 +48,10 @@
         make.size.mas_equalTo(CGSizeMake(100, 100));
     }];
     
-}
-
-- (void)dealTap{
     //调用一下方法
     [self.dog eat];
+    //展示一下数据
+    [self.testClass showDetailDesc];
     
     UIImageView *imageView1 = [TFWSDK_Image threeThousandWorld1];
     [self.view addSubview:imageView1];
@@ -61,6 +66,38 @@
     imageView2.frame = CGRectMake(0, 600, 204, 204);
     [self.view addSubview:imageView2];
 }
+
+- (void)dealTap{
+    //[self showPage1];
+
+    [self showPage2];
+}
+
+- (void)showPage1{
+    TestViewController *testVC = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:testVC animated:YES];
+}
+
+- (void)showPage2{
+    //加载Framework包里的xib控制器
+    TestXibViewController *vc = [[TestXibViewController alloc] initWithNibName:@"TFWSDK.framework/TestXibViewController" bundle:[NSBundle mainBundle]];
+    vc.view.backgroundColor = [UIColor orangeColor];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+- (void)showPage3{
+    TestPlayAudioViewController *vc1 = [[TestPlayAudioViewController alloc] init];
+    vc1.view.backgroundColor = [UIColor cyanColor];
+    [self presentViewController:vc1 animated:YES completion:nil];
+}
+
+- (void)showPage4{
+    TestPlayVideoViewController *vc2 = [[TestPlayVideoViewController alloc] init];
+    vc2.view.backgroundColor = [UIColor orangeColor];
+    [self presentViewController:vc2 animated:YES completion:nil];
+}
+
 
 
 

@@ -49,7 +49,7 @@ Pod::Spec.new do |spec|
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #spec.framework  = "UIKit", "Founcation"
-  spec.frameworks = "UIKit", "Founcation"
+  spec.frameworks = 'Foundation', 'UIKit'
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"

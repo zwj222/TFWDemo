@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7DA35552258A05890097DB08 /* 5860d9cb6302d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DA35551258A05890097DB08 /* 5860d9cb6302d.jpg */; };
+		7DA355A1258AE8D20097DB08 /* love.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3559E258AE8D10097DB08 /* love.jpg */; };
+		7DA355A2258AE8D20097DB08 /* RemakeFrameworkPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3559F258AE8D20097DB08 /* RemakeFrameworkPlist.plist */; };
+		7DA355A3258AE8D20097DB08 /* what.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7DA355A0258AE8D20097DB08 /* what.jpeg */; };
+		7DA355A5258AEE750097DB08 /* TFWSDK.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 7DA355A4258AEE750097DB08 /* TFWSDK.xcworkspace */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7DA35548258A04E40097DB08 /* TFWSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFWSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA3554B258A04E40097DB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DA35551258A05890097DB08 /* 5860d9cb6302d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5860d9cb6302d.jpg; sourceTree = "<group>"; };
+		7DA3559E258AE8D10097DB08 /* love.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = love.jpg; sourceTree = "<group>"; };
+		7DA3559F258AE8D20097DB08 /* RemakeFrameworkPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemakeFrameworkPlist.plist; sourceTree = "<group>"; };
+		7DA355A0258AE8D20097DB08 /* what.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = what.jpeg; sourceTree = "<group>"; };
+		7DA355A4258AEE750097DB08 /* TFWSDK.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = TFWSDK.xcworkspace; path = ../TFWSDK.xcworkspace; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +38,7 @@
 		7DA3553F258A04E40097DB08 = {
 			isa = PBXGroup;
 			children = (
+				7DA355A4258AEE750097DB08 /* TFWSDK.xcworkspace */,
 				7DA3554A258A04E40097DB08 /* TFWSDKResource */,
 				7DA35549258A04E40097DB08 /* Products */,
 			);
@@ -46,6 +55,9 @@
 		7DA3554A258A04E40097DB08 /* TFWSDKResource */ = {
 			isa = PBXGroup;
 			children = (
+				7DA3559E258AE8D10097DB08 /* love.jpg */,
+				7DA3559F258AE8D20097DB08 /* RemakeFrameworkPlist.plist */,
+				7DA355A0258AE8D20097DB08 /* what.jpeg */,
 				7DA35551258A05890097DB08 /* 5860d9cb6302d.jpg */,
 				7DA3554B258A04E40097DB08 /* Info.plist */,
 			);
@@ -110,6 +122,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA35552258A05890097DB08 /* 5860d9cb6302d.jpg in Resources */,
+				7DA355A3258AE8D20097DB08 /* what.jpeg in Resources */,
+				7DA355A2258AE8D20097DB08 /* RemakeFrameworkPlist.plist in Resources */,
+				7DA355A1258AE8D20097DB08 /* love.jpg in Resources */,
+				7DA355A5258AEE750097DB08 /* TFWSDK.xcworkspace in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +259,8 @@
 				DEVELOPMENT_TEAM = 88QQ9A525M;
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.willian.TFWSDKResource;
 				PRODUCT_NAME = TFWSDK;
 				SDKROOT = iphoneos;
@@ -259,6 +277,8 @@
 				DEVELOPMENT_TEAM = 88QQ9A525M;
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.willian.TFWSDKResource;
 				PRODUCT_NAME = TFWSDK;
 				SDKROOT = iphoneos;

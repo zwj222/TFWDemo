@@ -19,4 +19,12 @@ FOUNDATION_EXPORT const unsigned char TFWSDKVersionString[];
 #import <TFWSDK/TFWSDK_Dog.h>
 #import <TFWSDK/TFWSDK_Image.h>
 
+#import <TFWSDK/TestClassFilesClass.h>
+
+#import <TFWSDK/TestPlayAudioViewController.h>
+#import <TFWSDK/TestPlayVideoViewController.h>
+
+#import <TFWSDK/TestViewController.h>
+#import <TFWSDK/TestXibViewController.h>
+
 

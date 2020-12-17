@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7DA3550C2589FEEA0097DB08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3550B2589FEEA0097DB08 /* AppDelegate.m */; };
-		7DA3550F2589FEEA0097DB08 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3550E2589FEEA0097DB08 /* SceneDelegate.m */; };
 		7DA355122589FEEA0097DB08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA355112589FEEA0097DB08 /* ViewController.m */; };
 		7DA355152589FEEA0097DB08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA355132589FEEA0097DB08 /* Main.storyboard */; };
 		7DA355172589FEEC0097DB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DA355162589FEEC0097DB08 /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		7DA3551D2589FEEC0097DB08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3551C2589FEEC0097DB08 /* main.m */; };
 		7DA3553A258A01010097DB08 /* TFWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA35539258A01010097DB08 /* TFWSDK.framework */; };
 		7DA3555A258A094D0097DB08 /* TFWSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DA35559258A094D0097DB08 /* TFWSDK.bundle */; };
+		7DA355A8258B01530097DB08 /* TFWSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = 7DA35539258A01010097DB08 /* TFWSDK.framework */; };
 		80B35A4BC5D780688B01BC18 /* libPods-TFWDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37BCE6688A52DFB41A5B167 /* libPods-TFWDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +24,6 @@
 		7DA355072589FEEA0097DB08 /* TFWDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFWDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA3550A2589FEEA0097DB08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DA3550B2589FEEA0097DB08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7DA3550D2589FEEA0097DB08 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7DA3550E2589FEEA0097DB08 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		7DA355102589FEEA0097DB08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7DA355112589FEEA0097DB08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7DA355142589FEEA0097DB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,8 +83,6 @@
 				7DA35559258A094D0097DB08 /* TFWSDK.bundle */,
 				7DA3550A2589FEEA0097DB08 /* AppDelegate.h */,
 				7DA3550B2589FEEA0097DB08 /* AppDelegate.m */,
-				7DA3550D2589FEEA0097DB08 /* SceneDelegate.h */,
-				7DA3550E2589FEEA0097DB08 /* SceneDelegate.m */,
 				7DA355102589FEEA0097DB08 /* ViewController.h */,
 				7DA355112589FEEA0097DB08 /* ViewController.m */,
 				7DA355132589FEEA0097DB08 /* Main.storyboard */,
@@ -118,6 +114,7 @@
 				7DA355032589FEEA0097DB08 /* Sources */,
 				7DA355042589FEEA0097DB08 /* Frameworks */,
 				7DA355052589FEEA0097DB08 /* Resources */,
+				1D793892C0F7FB71007F1DF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA355A8258B01530097DB08 /* TFWSDK.framework in Resources */,
 				7DA3555A258A094D0097DB08 /* TFWSDK.bundle in Resources */,
 				7DA3551A2589FEEC0097DB08 /* LaunchScreen.storyboard in Resources */,
 				7DA355172589FEEC0097DB08 /* Assets.xcassets in Resources */,
@@ -175,6 +173,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D793892C0F7FB71007F1DF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFWDemo/Pods-TFWDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFWDemo/Pods-TFWDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFWDemo/Pods-TFWDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3F9FE1FA5588B8BC074E471A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,7 +222,6 @@
 				7DA355122589FEEA0097DB08 /* ViewController.m in Sources */,
 				7DA3550C2589FEEA0097DB08 /* AppDelegate.m in Sources */,
 				7DA3551D2589FEEC0097DB08 /* main.m in Sources */,
-				7DA3550F2589FEEA0097DB08 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
