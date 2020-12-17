@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.source_files  = "TFWSDK/TFWSDK/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
-  spec.public_header_files = "TFWSDK/TFWSDK/TFWSDK.h"
+  #spec.public_header_files = "TFWSDK/TFWSDK/TFWSDK.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
