@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #spec.source       = { :http => "https://github.com/zwj222/TFWDemo/blob/mainTFWSDK.framework.zip" }
 
 
-  spec.source       = { :http => "https://gitee.com/zwj946/tfwdemo/raw/master/TFWSDK.framework.zip" }
+  spec.source       = { :http => "https://gitee.com/zwj946/tfwdemo/raw/master/TFWSDK-0.0.8.zip" }
   
 
 
