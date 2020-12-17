@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TFWSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of TFWSDK."
 
   
@@ -42,14 +42,14 @@ Pod::Spec.new do |spec|
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   # spec.resource  = "icon.png"
-  spec.resources = "TFWSDK/TFWSDK/TFWSDK.bundle"
+  spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #spec.framework  = "UIKit", "Founcation"
-  spec.frameworks = 'Foundation', 'UIKit'
+  spec.frameworks = "Foundation", "UIKit", "MediaPlayer", "AVFoundation"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -59,6 +59,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "Masonry"
+  spec.dependency "SVProgressHUD"
 
 end
