@@ -28,7 +28,9 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source       = { :git => "https://github.com/zwj222/TFWDemo.git", :tag => "#{spec.version}" }
+  #spec.source       = { :git => "https://github.com/zwj222/TFWDemo.git", :tag => "#{spec.version}" }
+  spec.source       = { :http => "https://github.com/zwj222/TFWDemo/blob/main/TFWSDK.framework.zip" }
+
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
