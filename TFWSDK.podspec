@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TFWSDK"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "A short description of TFWSDK."
   spec.description  = <<-DESC
 	是这个测试sdk的描述，先随便写一点吧，以后想好了再来写。
@@ -29,7 +29,9 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #spec.source       = { :git => "https://github.com/zwj222/TFWDemo.git", :tag => "#{spec.version}" }
-  spec.source       = { :http => "https://github.com/zwj222/TFWDemo/blob/main/TFWSDK.framework.zip" }
+  #spec.source       = { :http => "https://github.com/zwj222/TFWDemo/blob/mainTFWSDK.framework.zip" }
+  spec.source       = { :http => "https://raw.githubusercontent.com/zwj222/TFWDemo/main/TFWSDK.framework.zip" }
+  
 
 
 
