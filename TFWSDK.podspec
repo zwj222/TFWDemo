@@ -21,26 +21,24 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #spec.source       = { :git => "https://github.com/zwj222/TFWDemo.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/zwj222/TFWDemo.git", :tag => "#{spec.version}" }
   #spec.source       = { :http => "https://github.com/zwj222/TFWDemo/blob/mainTFWSDK.framework.zip" }
-
-
-  spec.source       = { :http => "https://gitee.com/zwj946/tfwdemo/raw/master/TFWSDK-0.0.8.zip" }
+  #spec.source       = { :http => "https://gitee.com/zwj946/tfwdemo/raw/master/TFWSDK-0.0.8.zip" }
   
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #spec.source_files  = "TFWSDK/TFWSDK/*.{h,m}"
+  spec.source_files  = "TFWSDK/TFWSDK/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
-  # spec.public_header_files = "TFWSDK/TFWSDK/TFWSDK.h"
+  spec.public_header_files = "TFWSDK/TFWSDK/TFWSDK.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   # spec.resource  = "icon.png"
   #spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
-  #spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
+  spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
 
-  spec.vendored_frameworks ='TFWSDK.framework'
+  #spec.vendored_frameworks ='TFWSDK.framework'
 
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -57,8 +55,8 @@ Pod::Spec.new do |spec|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.requires_arc = true
 
-  #spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  #spec.dependency "Masonry"
-  #spec.dependency "SVProgressHUD"
+  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  spec.dependency "Masonry"
+  spec.dependency "SVProgressHUD"
 
 end
