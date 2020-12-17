@@ -3,8 +3,6 @@ Pod::Spec.new do |spec|
   spec.name         = "TFWSDK"
   spec.version      = "0.0.5"
   spec.summary      = "A short description of TFWSDK."
-
-  
   spec.description  = <<-DESC
 	是这个测试sdk的描述，先随便写一点吧，以后想好了再来写。
                    DESC
@@ -36,14 +34,13 @@ Pod::Spec.new do |spec|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #spec.source_files  = "TFWSDK/TFWSDK/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
-
   # spec.public_header_files = "TFWSDK/TFWSDK/TFWSDK.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   # spec.resource  = "icon.png"
   #spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
-  spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
+  #spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
 
   spec.vendored_frameworks ='TFWSDK.framework'
 
