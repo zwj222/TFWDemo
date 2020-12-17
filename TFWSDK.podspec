@@ -42,7 +42,9 @@ Pod::Spec.new do |spec|
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   # spec.resource  = "icon.png"
-  spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
+  #spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
+  spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
+
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
