@@ -40,7 +40,6 @@ Pod::Spec.new do |spec|
   #spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
   #spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
 
-  spec.preserve_paths = 'TFWSDK.framework'
   spec.vendored_frameworks ='TFWSDK.framework'
 
 
