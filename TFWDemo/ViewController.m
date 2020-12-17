@@ -68,7 +68,7 @@
 }
 
 - (void)dealTap{
-    //[self showPage1];
+//    [self showPage1];
 
     [self showPage2];
 }
@@ -80,8 +80,8 @@
 
 - (void)showPage2{
     //加载Framework包里的xib控制器
-    TestXibViewController *vc = [[TestXibViewController alloc] initWithNibName:@"TFWSDK.framework/TestXibViewController" bundle:[NSBundle mainBundle]];
-    vc.view.backgroundColor = [UIColor orangeColor];
+    TestXibViewController *vc = [[TestXibViewController alloc] initWithNibName:@"TestXibViewController" bundle:[NSBundle mainBundle]];
+//    vc.view.backgroundColor = [UIColor orangeColor];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
