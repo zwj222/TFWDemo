@@ -6,23 +6,16 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
 	是这个测试sdk的描述，先随便写一点吧，以后想好了再来写。
                    DESC
-
   spec.homepage     = "https://github.com/zwj222/TFWDemo"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.license      = { :type => "MIT", :text => "Copyright (C) 2020 Willian, Inc. All rights reserved." }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.author             = { "Willian" => "1741831606@qq.com" }
   # spec.authors            = { "Willian" => "1741831606@qq.com" }
   # spec.social_media_url   = "https://twitter.com/Willian"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #spec.platform     = :ios, "10.0"
-
   #  When using multiple platforms
   spec.ios.deployment_target = "10.0"
 
@@ -32,7 +25,6 @@ Pod::Spec.new do |spec|
   #spec.source       = { :http => "https://github.com/zwj222/TFWDemo/blob/mainTFWSDK.framework.zip" }
   spec.source       = { :http => "https://gitee.com/zwj946/tfwdemo/raw/master/TFWSDK.framework.zip" }
   
-
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -46,7 +38,7 @@ Pod::Spec.new do |spec|
   #spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
   #spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
 
-  spec.vendored_frameworks ='TFWSDK.framework'
+  spec.vendored_framework ='TFWSDK.framework'
 
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -63,8 +55,8 @@ Pod::Spec.new do |spec|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.requires_arc = true
 
-  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "Masonry"
-  spec.dependency "SVProgressHUD"
+  #spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  #spec.dependency "Masonry"
+  #spec.dependency "SVProgressHUD"
 
 end
