@@ -23,6 +23,8 @@ Pod::Spec.new do |spec|
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #spec.source       = { :git => "https://github.com/zwj222/TFWDemo.git", :tag => "#{spec.version}" }
   #spec.source       = { :http => "https://github.com/zwj222/TFWDemo/blob/mainTFWSDK.framework.zip" }
+
+
   spec.source       = { :http => "https://gitee.com/zwj946/tfwdemo/raw/master/TFWSDK.framework.zip" }
   
 
@@ -38,7 +40,8 @@ Pod::Spec.new do |spec|
   #spec.resources = ["TFWSDK/TFWSDK/TFWSDK.bundle", "TFWSDK/TFWSDK/*.xib"]
   #spec.resources = 'TFWSDK/**/*.{bundle,xib,png}'
 
-  spec.vendored_framework ='TFWSDK.framework'
+  spec.preserve_paths = 'TFWSDK.framework'
+  spec.vendored_frameworks ='TFWSDK.framework'
 
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
