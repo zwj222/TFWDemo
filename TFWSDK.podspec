@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TFWSDK"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "A short description of TFWSDK."
   spec.description  = <<-DESC
 	是这个测试sdk的描述，先随便写一点吧，以后想好了再来写。
